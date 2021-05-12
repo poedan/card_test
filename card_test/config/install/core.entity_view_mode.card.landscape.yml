@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - card_test
+id: card.landscape
+label: Landscape
+targetEntityType: card
+cache: true

@@ -1,0 +1,15 @@
+name: Card Test
+description: 'Module for interview test.'
+type: module
+core_version_requirement: ^8.8 || ^9
+package: Test
+dependencies:
+  - block_content
+  - entity_reference_revisions
+  - field
+  - layout_builder
+  - link
+  - media
+  - media_library
+  - options
+  - paragraphs

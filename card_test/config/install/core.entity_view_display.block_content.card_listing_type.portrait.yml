@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_listing_type
+    - core.entity_view_mode.block_content.portrait
+    - field.field.block_content.card_listing_type.body
+    - field.field.block_content.card_listing_type.field_cards
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: block_content.card_listing_type.portrait
+targetEntityType: block_content
+bundle: card_listing_type
+mode: portrait
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cards:
+    weight: 1
+    label: above
+    settings:
+      view_mode: portrait
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

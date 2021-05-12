@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.card.field_card_cta
+    - paragraphs.paragraphs_type.cta
+  module:
+    - card_test
+    - entity_reference_revisions
+id: card.card.field_card_cta
+field_name: field_card_cta
+entity_type: card
+bundle: card
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cta: cta
+    target_bundles_drag_drop:
+      cta:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions
